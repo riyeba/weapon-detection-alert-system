@@ -1,4 +1,4 @@
-##WEAPON DETECTON AND ALERT SYSTEM
+## WEAPON DETECTON AND ALERT SYSTEM
 
 This repository contains a YOLOv8-powered weapon detection project tailored for video-based security and surveillance applications.
 The system processes video streams such as CCTV footage or live webcam feeds to detect weapons in real-time. 
