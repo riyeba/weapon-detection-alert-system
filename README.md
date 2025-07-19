@@ -9,3 +9,10 @@ Once a weapon is detected, the system draws bounding boxes around it and sends a
 
 ![image alt](https://github.com/riyeba/weapon-detection-alert-system/blob/main/message_receivedd.png?raw=true)
 
+
+## APPLICATION
+1. Security Monitoring
+2. Restricted area monitoring
+3. Public Safety
+4. Event Security Management
+5. Access control Systems
