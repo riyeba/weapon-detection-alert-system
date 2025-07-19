@@ -16,3 +16,11 @@ Once a weapon is detected, the system draws bounding boxes around it and sends a
 3. Public Safety
 4. Event Security Management
 5. Access control Systems
+
+## Requirements
+1. Python 3.7 +
+2. Ultralytics
+3. Roboflow
+4. yagmail
+5. opencv-python
+   
