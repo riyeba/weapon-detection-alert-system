@@ -136,6 +136,13 @@ This project uses a **YOLOv8 model trained for weapon detection**. The model can
    ```python
    model = YOLO('path/to/modelweapon.pt')
 
+## Acknowledgments
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) for providing the YOLOv8 detection framework.  
+- [Roboflow](https://roboflow.com/) for assisting with dataset management and annotation.  
+- [Yagmail](https://github.com/kootenpv/yagmail) for handling email notifications.  
+- Open-source Python community for libraries like OpenCV and NumPy that make real-time video and image processing possible.  
+- All contributors and researchers whose work inspired and supported this project.  
 
 
 
