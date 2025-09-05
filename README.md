@@ -72,6 +72,24 @@ The `video.py` script processes video streams, detects weapons, and sends email 
 3. **Run the script:**  
    ```bash
    python video.py
+   ```
+
+   ### Example code : Video Weapon Detection
+
+
+
+
+
+```python
+import cv2
+from ultralytics import YOLO
+import ygmail
+
+Class Weapon:
+  # code for processing video
+
+```
+
 
 
 
