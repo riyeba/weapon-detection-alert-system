@@ -83,13 +83,58 @@ The `video.py` script processes video streams, detects weapons, and sends email 
 ```python
 import cv2
 from ultralytics import YOLO
-import ygmail
+import yagmail
+import torch
 
-Class Weapon:
+class WeaponVideoProcessor:
   # code for processing video
 
 ```
+## Email Notification Setup
 
+Both scripts (`video.py` and `image.py`) use the `yagmail` library to send email alerts when a weapon is detected.
+
+### Steps to Set Up:
+
+1. **Create an email account with an app-specific password:**  
+   - If you are using Gmail, generate an [app password](https://support.google.com/accounts/answer/185833) for your account.  
+   - Other email providers may have similar app-password features or require enabling SMTP access.
+
+2. **Update the scripts with your email credentials:**  
+   - In both scripts, set the following variables:  
+     ```python
+     email = "your_email@gmail.com"
+     email_password = "your_app_password"
+     to_email = "recipient_email@example.com"
+     ```
+
+3. **Verify email sending:**  
+   - Run the script on a test video or image to ensure that an email is received whenever a weapon is detected.
+
+### Notes:
+
+- Using an app-specific password is **recommended** for security.  
+- Ensure that your email provider allows SMTP access for sending emails.  
+- The `yagmail` library simplifies sending emails without manually configuring SMTP settings.
+
+
+
+## Model
+
+This project uses a **YOLOv8 model trained for weapon detection**. The model can detect multiple types of weapons, including guns, pistols, rifles, knives, and grenades.
+
+### Details:
+
+- The model is trained on a weapon detection dataset (using your own data or datasets from Roboflow).  
+- YOLOv8 provides real-time detection, making it suitable for video streams from CCTV or live webcams.  
+- Both the `video.py` and `image.py` scripts load this pre-trained model for inference.
+
+### Using Your Model:
+
+1. Place your trained weights file (`modelweapon.pt`) in an accessible folder.  
+2. Update the `model_path` variable in the scripts to point to this file:  
+   ```python
+   model = YOLO('path/to/modelweapon.pt')
 
 
 
